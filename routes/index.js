@@ -7,10 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/keyboard', function(req, res, next) {
-  res.render('index', {"type" : "buttons", "buttons" : ["선택 1", "선택 2", "선택 3"] });
+  res.render('', {"type" : "buttons", "buttons" : ["선택 1", "선택 2", "선택 3"] });
 });
 
+router.post('/message', function(req, res, next) {
+  res.render('', {"message":{"text" : "빰빰맨의 방송은 아직입니다!"} });
+});
 
-
-'https://:your_server_url/keyboard'
 module.exports = router;
